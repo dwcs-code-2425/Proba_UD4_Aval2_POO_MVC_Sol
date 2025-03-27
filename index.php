@@ -19,7 +19,7 @@
 
 //Creamos 3 productos:
 
-        $camisa = new Prenda(1, "Camisa", 19.99, "#000000");
+        $camisa = new Prenda(1, "Camisa", 19.99, "", "#000000" );
 
         $autorPHP_1 = "Matt Davis";
         $autorPHP_2 = "Louis Reed";

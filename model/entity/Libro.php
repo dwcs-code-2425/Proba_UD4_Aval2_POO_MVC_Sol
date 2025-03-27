@@ -36,11 +36,7 @@ class Libro extends Produto{
         return $this;
     }
 
-    // public function jsonSerialize() {
-    //     $array = parent::jsonSerialize();
-    //     $array["autores"] = $this->autores;
-    //     return $array;
-    // }
+   
 
     public function __toString(): string {
         $cadea = parent::__toString();

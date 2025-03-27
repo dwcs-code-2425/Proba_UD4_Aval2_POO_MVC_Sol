@@ -5,7 +5,7 @@ use model\interfaces\IComparar;
 use model\exceptions\NotSuitableClassException;
 
 
-class Produto implements IComparar  /*,  \JsonSerializable*/{
+class Produto implements IComparar  {
     use \ViewData;
 
     private const DEFAULT_IVA = 0.21;
@@ -96,13 +96,5 @@ class Produto implements IComparar  /*,  \JsonSerializable*/{
         self::$unidades = $unidades;
     }
 
-    // public function jsonSerialize() {
-    //     //Especificamos qué propiedades no públicas queremos que pasen a formar parte del objeto JSON
-    //     return array(
-    //         'id' => $this->id,
-    //         'nome' => $this->nome,
-    //         'prezo' => $this->prezo,
-    //         'imagePath' => $this->imagePath
-    //     );
-    // }
+ 
 }

@@ -37,11 +37,7 @@ class Prenda extends Produto{
         return $this;
     }
 
-    // public function jsonSerialize() {
-    //     $array = parent::jsonSerialize();
-    //     $array["cor"] = $this->cor;
-    //     return $array;
-    // }
+
 
     public function __toString(): string {
         $cadena = parent::__toString();
