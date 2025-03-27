@@ -1,13 +1,13 @@
 <?php
 
-class ProductoServicio {
+class ProdutoServicio {
 
     
 
-    private IProductoRepository $repository;
+    private IProdutoRepository $repository;
 
     public function __construct() {
-        $this->repository = new ProductoRepository();
+        $this->repository = new ProdutoRepository();
     }
 
     /* Get all products */

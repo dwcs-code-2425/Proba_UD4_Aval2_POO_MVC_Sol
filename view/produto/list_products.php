@@ -10,9 +10,9 @@
                 <img src="<?= $path ?>" class="card-img-top" title="<?= basename($path) ?>" alt="<?= basename($path) ?>" height="300">
                 <div class="card-body ">
 
-                    <h5 class="card-title"><?php echo $prod->getNombre(); ?></h5>
+                    <h5 class="card-title"><?php echo $prod->getNome(); ?></h5>
 
-                    <div class="card-text"><?php echo nl2br($prod->getPrecio()) . "€"; ?></div>
+                    <div class="card-text"><?php echo nl2br($prod->getPrezo()) . "€"; ?></div>
                     <hr class="mt-1"/>
                 </div>
             </div>

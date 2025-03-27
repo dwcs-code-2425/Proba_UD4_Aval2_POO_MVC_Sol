@@ -1,15 +1,15 @@
 <?php
 
-class ProductoController {
+class ProdutoController {
 
     public $page_title;
     public $view;
     private $productoServicio;
 
     public function __construct() {
-        $this->view = 'producto/list_products';
+        $this->view = 'produto/list_products';
         $this->page_title = '';
-        $this->productoServicio = new ProductoServicio();
+        $this->productoServicio = new ProdutoServicio();
     }
 
     /* List all products */

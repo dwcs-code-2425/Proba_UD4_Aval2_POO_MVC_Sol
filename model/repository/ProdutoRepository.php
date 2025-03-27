@@ -7,9 +7,9 @@
  */
 
 
-class ProductoRepository implements IProductoRepository {
+class ProdutoRepository implements IProdutoRepository {
 
-    const RUTA_FICHERO = "config" . DIRECTORY_SEPARATOR . "productos.json";
+    const RUTA_FICHERO = "config" . DIRECTORY_SEPARATOR . "produtos.json";
 
     private $filePath;
     private $productosArray = [];
@@ -28,7 +28,7 @@ class ProductoRepository implements IProductoRepository {
         if ($arrayFromJSON != null) {
             foreach ($arrayFromJSON as $index => $notaArrayAsoc) {
 
-                $nota = Util::json_decode_array_to_class($notaArrayAsoc, "model\entity\Producto");
+                $nota = Util::json_decode_array_to_class($notaArrayAsoc, "model\\entity\\Produto");
                 array_push($arrayProductos, $nota);
             }
         }

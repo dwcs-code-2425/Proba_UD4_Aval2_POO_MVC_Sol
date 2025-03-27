@@ -1,7 +1,7 @@
 <?php
 
 /* Default options */
-const DEFAULT_CONTROLLER = "Producto";
+const DEFAULT_CONTROLLER = "Produto";
 const DEFAULT_ACTION = "list";
 
 const CONTROLLERS_FOLDER="controller";
